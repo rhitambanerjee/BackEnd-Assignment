@@ -1,0 +1,42 @@
+
+<h1>Create User</h1>
+
+{{#if serverError}}
+<div class="alert alert-danger">{{serverError}}</div>
+{{/if}}
+
+<form action="" method="POST">
+  <div class="form-group">
+    <label for="">Title</label>
+    <input type="text" name="Title" class="form-control" id="" value="" required>
+  </div>
+
+  <div class="form-group">
+    <label for="">Description</label>
+    <input type="text" name="Description" class="form-control" id="" value="" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="">Start Date And Time</label>
+    <input type="datetime-local" name="StartDateandTime" class="form-control" id="" value="" required>
+  </div>
+
+  <div class="form-group">
+    <label for="">End Date And Time</label>
+    <input type="datetime-local" name="EndDateandTime" class="form-control" id="" value="" required>
+  </div>
+
+  <div class="form-group">
+    <label for="">Priority</label>
+    <input type="number" name="Priority" class="form-control" id="" value="" required>
+  </div>
+
+  <div class="form-group">
+    <label for="">Status</label>
+    <input type="text" name="Status" class="form-control" id="" value="" required>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary"> Create user </button>
+  </div>
+</form>
